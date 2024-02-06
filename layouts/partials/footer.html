@@ -1,5 +1,5 @@
 <footer class="footer">
-  <p>&copy; {{ now.Year }} <a href="{{ `` | absURL }}">{{ site.Title }}</a>
+  <p>&copy; 2023~{{ now.Year }} <a href="{{ `` | absURL }}">{{ site.Title }}</a>
     Powered by
     <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>
     <a href="https://github.com/guangzhengli/hugo-theme-ladder" rel="noopener" target="_blank">Ladder</a>
@@ -54,7 +54,9 @@
             try {
                 document.execCommand('copy');
                 copyingDone();
-            } catch (e) { };
+            } catch (e) {
+            }
+            ;
             selection.removeRange(range);
         });
         codeblock.parentNode.appendChild(copybutton);
